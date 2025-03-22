@@ -1,0 +1,187 @@
+/* 全体 */
+body {
+	background-color: #EEEEEE;
+	text-align: center;
+	min-width: 900px;
+}
+
+/* ヘッダー、ナビ*/
+header,
+nav {
+	background-color: #595959;
+	color: #ffffff;
+	padding: 5px 0;
+	margin-bottom: 3px;
+}
+
+/* ヘッダーの見出し */
+header h1 {
+	font-size: 20pt;
+	margin: 10px auto;
+}
+
+/* ヘッダー、ナビ内リンク */
+header a,
+nav a {
+	color: #ffffff;
+}
+
+.category {
+    padding-left: 1%;
+}
+
+.cart-link {
+    margin-left: auto; /* 右端に寄せる */
+}
+
+
+
+/* 特定の要素だけ右寄せしたいとき */
+.right-align {
+	text-align: right;
+}
+
+/* メイン */
+main {
+	background-color: #EEEEEE;
+	min-height: 50px;
+	padding-left: 40px;
+}
+
+.title {
+	font-size: 20px;
+	text-align: left;
+	padding-left: 80px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+
+}
+
+main.order {
+	background-color:   rgb(255, 255, 255);;
+	min-height: 500px;
+	padding: 40px;
+	width: 85%;
+	height: 400px;
+	margin: 3% auto;
+	border: 1px solid black;
+
+}
+
+.last {
+	padding: 140px;
+	text-align: center;
+}
+.last-sentence{
+	padding: 10px;
+}
+
+/* テーブル */
+table {
+	width: 90%;
+	min-width: 800px;
+	min-height: 100px;
+	background-color: white;
+	margin: 5px auto;
+	border-collapse: collapse;
+	border: 1px solid #595959;
+}
+
+/* 表の見出し */
+table th {
+	background: #666666;
+	color: #ffffff;
+}
+
+/* 表のセル */
+/* ヘッダーのセル */
+th {
+	background-color: #666666;
+	color: #ffffff;
+	padding: 10px;
+	/* ✅ セルの内側に20pxの余白を追加して高さを高く */
+	text-align: center;
+	/* 中央寄せ */
+	border: 1px solid #595959;
+}
+
+td {
+	border: 1px solid #595959;
+
+}
+
+/* 各列の幅指定(/items) */
+.col-no {
+    width: 7%;
+	height: 45px;
+}
+
+.col-name {
+    width: 55%;
+}
+
+.col-price {
+    width: 18%;
+}
+
+.col-action {
+    width: 18%;
+}
+
+.name {
+	text-align: left;
+	padding-left: 20px;
+	}
+
+
+/* フォーム */
+form {
+	display: block;
+	padding: 0%;
+}
+
+/* 送信ボタン */
+button {
+	width: 99%;
+	height: 42px;
+	background-color: #666666;
+	color: #ffffff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+
+}
+
+/* 注文ボタンの中央配置 */
+.btn.order {
+	/* 修正: スペースをなくす */
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.btn.order {
+	/* 修正: セレクタの書き方 */
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #666666;
+	color: white;
+	border: none;
+
+	cursor: pointer;
+	width: 20%;
+	margin: 30px auto;
+}
+
+.btn.order:hover {
+	/* 修正: スペースをなくす */
+	background-color: #f1b2b2;
+}
+
+
+
+/* 送信ボタン(ホバー時) */
+button:hover {
+	background-color: #f1b2b2;
+}

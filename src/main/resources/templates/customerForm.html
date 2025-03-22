@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CustomerInfo</title>
+	<link rel="stylesheet" type="text/css" href="/css/items.css">
+	<link rel="stylesheet" type="text/css" href="/css/reset.css">
+</head>
+
+<body>
+	<header th:replace="header"></header>
+	<hr>
+	<main>
+		<div class="title">ご注文商品</div>
+		<span th:replace="cartItem"></span>
+		<hr>
+		<div class="title">お客様情報入力</div>
+		<form action="/order/confirm" method="post">
+			<table border="1">
+				<tr>
+					<th style="width: 25%;">お名前</th>
+					<td>
+						<input type="text" name="name"
+							style="width:99%; height:35px;border: 1px solid #666666;padding: 10px;">
+					</td>
+				</tr>
+				<tr>
+					<th>住所</th>
+					<td>
+						<input type="text" name="address"
+							style="width:99%; height:35px;border: 1px solid #666666;padding: 10px;">
+					</td>
+				</tr>
+				<tr>
+					<th>電話番号</th>
+					<td>
+						<input type="text" name="tel"
+							style="width:99%; height:35px;border: 1px solid #666666;padding: 10px;">
+					</td>
+				</tr>
+				<tr>
+					<th>e-mail</th>
+					<td>
+						<input type="text" name="email"
+							style="width:99%; height:35px;border: 1px solid #666666;padding: 10px;">
+					</td>
+				</tr>
+			</table>
+			<button class="btn order">確認画面へ</button>
+		</form>
+	</main>
+	<hr>
+
+</body>
+
+</html>

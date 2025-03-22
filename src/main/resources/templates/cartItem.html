@@ -1,0 +1,27 @@
+<table border="1">
+	<tr>
+		<th style="width: 7% ;height:45px;">NO</th>
+		<th style="width: 45%;">商品名</th>
+		<th style="width: 10%;">値段</th>
+		<th style="width: 10%;">個数</th>
+		<th style="width: 10%;">小計</th>
+		<th style="width: 18%;"></th>
+	</tr>
+	<tr th:each="item:${@cart.items}">
+		<td th:text="${item.id}"style="height:45px;"></td>
+		<td class="name" th:text="${item.name}"></td>
+		<td th:text="${#numbers.formatInteger(item.price, 3, 'COMMA') + '円'}"></td>
+		<td th:text="${item.quantity}"></td>
+		<td th:text="${#numbers.formatInteger(item.price * item.quantity, 3, 'COMMA') + '円'}"></td>
+		<td>
+			<form action="/cart/delete" method="post">
+				<input type="hidden" name="itemId" th:value="${item.id}">
+				<button >削除</button>
+			</form>
+		</td>
+	</tr>
+	<tr style="height:45px;">
+		<td align="right" colspan="6" th:text="'総計：'+${#numbers.formatInteger(@cart.totalPrice, 3, 'COMMA') + '円'}"style="padding-right: 20px;"></td>
+		
+	</tr>
+</table>

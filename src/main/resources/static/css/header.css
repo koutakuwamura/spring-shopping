@@ -1,0 +1,39 @@
+/* ヘッダー、ナビゲーションメニュー、フッター */
+header {
+	background-color: #595959;
+	color: #ffffff;
+	height: 100px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 3px;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav {
+	background-color: #666666;
+	margin-bottom: 30px;
+	;
+}
+
+header div {
+	text-align: right;
+	margin-top: 30px;
+	margin-right: 20px;
+
+}
+ 
+
+/* ヘッダー、ナビゲーション内リンク */
+header a,
+nav a {
+	color: #ffffff;
+	
+}
+
+/* ヘッダー内見出し */
+header h1 {
+	font-size: 20pt;
+	margin: 30px;
+}

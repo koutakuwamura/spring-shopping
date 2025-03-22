@@ -1,0 +1,17 @@
+<link rel="stylesheet" type="text/css" href="/css/header.css">
+<link rel="stylesheet" type="text/css" href="/css/reset.css">
+
+<header>
+
+	<h1>サンプルショッピング</h1>
+
+	<div>
+		<span th:text="'こんにちは、'+${@account.name}+'さん'"></span>
+
+		<br />
+
+		<div class="logout" style="margin:10px">
+			<a href="/logout">ログアウト</a>
+		</div>
+	</div>
+</header>
